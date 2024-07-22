@@ -1,4 +1,12 @@
 // Nombre de integrantes:
+
+// Anderson Marlon Alvia Mero
+// Johan Franklin Chóez Suárez
+// Carlos Mauricio Quimiz Mendoza
+// Carlos Antonio Reyes Carvajal
+// Vinces Reyes Josue Alexander
+
+
 /*
 Moreira Palma  Joao Elian
 Kelly Dayana Canchingre Quevedo
