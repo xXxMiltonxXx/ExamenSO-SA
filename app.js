@@ -6,6 +6,11 @@
 // Carlos Antonio Reyes Carvajal
 // Vinces Reyes Josue Alexander
 
+//Cesar Arteaga
+//Diego casanova
+//justin zambrano
+//jeremy delgado
+//jose pacheco
 
 /*
 Moreira Palma  Joao Elian
