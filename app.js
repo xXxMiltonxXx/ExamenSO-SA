@@ -1,10 +1,34 @@
 // Nombre de integrantes:
+
 // Anderson Marlon Alvia Mero
 // Johan Franklin Chóez Suárez
 // Carlos Mauricio Quimiz Mendoza
 // Carlos Antonio Reyes Carvajal
 // Vinces Reyes Josue Alexander
 
+
+/*
+Moreira Palma  Joao Elian
+Kelly Dayana Canchingre Quevedo
+Fernandez Cedeno Jandry David
+Muniz Rivas Leopoldo MIquel
+Menoscal Santana Bryan Steven
+
+
+*/
+
+
+// Milton Angamarca
+
+
+
+
+//Grupo #3:
+//Jose Luis Sarabia Calderon
+//Oliver Jackson Mendoza Calero
+//David Javier Jaramillo Intriago
+//Lilibeth Jamileth Pinargote Intriago
+//Saul Ivan Castro Muñoz
 const express = require('express');
 const app = express();
 const port = 3000;
