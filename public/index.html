@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <h1 class="text-2xl font-bold mb-4">Parking Management</h1>
+        <form id="vehicleForm" class="mb-4">
+            <input type="text" id="plateInput" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Plate Number">
+            <input type="text" id="modelInput" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2" placeholder="Model">
+            <input type="text" id="colorInput" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2" placeholder="Color">
+            <button type="submit" class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Vehicle</button>
+        </form>
+        <ul id="vehicleList" class="list-disc pl-5"></ul>
+    </div>
+
+    <script>
+        document.getElementById('vehicleForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const plateInput = document.getElementById('plateInput').value.trim();
+            const modelInput = document.getElementById('modelInput').value.trim();
+            const colorInput = document.getElementById('colorInput').value.trim();
+
+            if (plateInput && modelInput && colorInput) {
+                const response = await fetch('/addVehicle', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ plate: plateInput, model: modelInput, color: colorInput })
+                });
+
+                if (response.ok) {
+                    const newVehicle = document.createElement('li');
+                    newVehicle.textContent = `${plateInput} - ${modelInput} - ${colorInput}`;
+                    document.getElementById('vehicleList').appendChild(newVehicle);
+                    document.getElementById('plateInput').value = '';
+                    document.getElementById('modelInput').value = '';
+                    document.getElementById('colorInput').value = '';
+                } else {
+                    alert('Failed to add vehicle');
+                }
+            }
+        });
+
+        // Fetch and display vehicles
+        async function fetchVehicles() {
+            const response = await fetch('/vehicles');
+            const vehicles = await response.json();
+            const vehicleList = document.getElementById('vehicleList');
+            vehicles.forEach(vehicle => {
+                const li = document.createElement('li');
+                li.textContent = `${vehicle.plate} - ${vehicle.model} - ${vehicle.color}`;
+                vehicleList.appendChild(li);
+            });
+        }
+
+        fetchVehicles();
+    </script>
+</body>
+</html>
