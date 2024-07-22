@@ -6,6 +6,12 @@
 // Carlos Antonio Reyes Carvajal
 // Vinces Reyes Josue Alexander
 
+//Castro Cristopher
+//tyrone mora
+//delgado parraga
+//ami ocampo
+//joustin alonzo
+
 //Cesar Arteaga
 //Diego casanova
 //justin zambrano
