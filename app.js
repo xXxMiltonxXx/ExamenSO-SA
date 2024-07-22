@@ -1,5 +1,9 @@
 // Nombre de integrantes:
-// Milton Angamarca
+// Anderson Marlon Alvia Mero
+// Johan Franklin Chóez Suárez
+// Carlos Mauricio Quimiz Mendoza
+// Carlos Antonio Reyes Carvajal
+// Vinces Reyes Josue Alexander
 
 const express = require('express');
 const app = express();
