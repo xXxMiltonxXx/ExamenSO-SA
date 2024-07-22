@@ -19,6 +19,13 @@ Fernandez Cedeno Jandry David
 Muniz Rivas Leopoldo MIquel
 Menoscal Santana Bryan Steven
 
+// derlis lopez
+// david cevallos
+//  alay pedor
+// alay zambrano
+// raymond tubay
+
+
 
 */
 
