@@ -1,4 +1,15 @@
 // Nombre de integrantes:
+/*
+Moreira Palma  Joao Elian
+Kelly Dayana Canchingre Quevedo
+Fernandez Cedeno Jandry David
+Muniz Rivas Leopoldo MIquel
+Menoscal Santana Bryan Steven
+
+
+*/
+
+
 // Milton Angamarca
 
 const express = require('express');
