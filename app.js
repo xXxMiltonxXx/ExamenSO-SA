@@ -1,10 +1,30 @@
 // Nombre de integrantes:
+
+// Anderson Marlon Alvia Mero
+// Johan Franklin Chóez Suárez
+// Carlos Mauricio Quimiz Mendoza
+// Carlos Antonio Reyes Carvajal
+// Vinces Reyes Josue Alexander
+
+//Cesar Arteaga
+//Diego casanova
+//justin zambrano
+//jeremy delgado
+//jose pacheco
+
 /*
 Moreira Palma  Joao Elian
 Kelly Dayana Canchingre Quevedo
 Fernandez Cedeno Jandry David
 Muniz Rivas Leopoldo MIquel
 Menoscal Santana Bryan Steven
+
+// derlis lopez
+// david cevallos
+//  alay pedor
+// alay zambrano
+// raymond tubay
+
 
 
 */
