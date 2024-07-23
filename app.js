@@ -66,9 +66,10 @@ async function main() {
         res.send({ success: true });
     });
 
-    app.listen(port, () => {
+     app.listen(port, () => {
         console.log(`App listening at http://localhost:${port}`);
     });
+
 }
 
 main().catch(console.error);
